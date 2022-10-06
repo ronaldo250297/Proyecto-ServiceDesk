@@ -15,34 +15,37 @@
         </button>
         <div id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
+                <!--
                 <li class="nav-item active">
                     <a class="nav-link" href="<?=base_url('listarusuario');?>">USUARIO<span></span></a>
                 </li>
-                <!--
+                -->
                 <li class="nav-item active">
                     <a class="nav-link" href="<?=base_url('listarempleado');?>">EMPLEADO<span></span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="<?=base_url('listarrespuesta');?>">REG. RESPUESTA<span></span></a>
                 </li>
-                -->
+                <!--
                 <li class="nav-item active">
                     <a class="nav-link" href="<?=base_url('listarincidencia');?>">REG. INCIDENCIA<span></span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">REG. PETICION<span></span></a>
                 </li>
-                <!--
+                -->
                 <li class="nav-item active">
                     <a class="nav-link" href="<?=base_url('listararea');?>">REG. AREAS INCIDENCIAS<span></span></a>
                 </li>
+                <!--
                 <li class="nav-item active">
                     <a class="nav-link" href="#">REG. DET. INCIDENCIAS<span></span></a>
                 </li>
+                -->
                 <li class="nav-item active">
                     <a class="nav-link" href="<?=base_url('listartraslado');?>">INC. X AREA<span></span></a>
                 </li>
-                -->
+                
             </ul>
         </div>
         <a class="navbar-brand" href="<?=base_url('listarempleado');?>">BITEL</a>

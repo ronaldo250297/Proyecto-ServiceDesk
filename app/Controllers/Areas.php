@@ -11,7 +11,7 @@ class Areas extends Controller{
         $area = new Area();
         $datos['areas'] = $area->orderBy('idare','ASC')->findAll();
 
-        $datos['cabecera'] = view('template/cabecera');
+        $datos['cabecera2'] = view('template/cabecera2');
         $datos['pie'] = view('template/piepagina');
 
         return view('areas/listararea',$datos);
@@ -21,7 +21,7 @@ class Areas extends Controller{
     
     public function creararea(){
 
-        $datos['cabecera'] = view('template/cabecera');
+        $datos['cabecera2'] = view('template/cabecera2');
         $datos['pie'] = view('template/piepagina');
 
         return view('areas/creararea',$datos);
@@ -73,7 +73,7 @@ class Areas extends Controller{
 
         $datos['area'] = $area -> where('idare',$id)->first();
 
-        $datos['cabecera'] = view('template/cabecera');
+        $datos['cabecera2'] = view('template/cabecera2');
         $datos['pie'] = view('template/piepagina');
 
         return view('areas/editararea',$datos);

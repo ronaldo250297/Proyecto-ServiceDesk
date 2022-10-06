@@ -10,7 +10,7 @@ class Traslados extends Controller{
         $traslado = new Traslado();
         $datos['traslados'] = $traslado->orderBy('idtra','ASC')->findAll();
 
-        $datos['cabecera'] = view('template/cabecera');
+        $datos['cabecera2'] = view('template/cabecera2');
         $datos['pie'] = view('template/piepagina');
 
         return view('traslados/listartraslado',$datos);
@@ -20,7 +20,7 @@ class Traslados extends Controller{
     
     public function creartraslado(){
 
-        $datos['cabecera'] = view('template/cabecera');
+        $datos['cabecera2'] = view('template/cabecera2');
         $datos['pie'] = view('template/piepagina');
 
         return view('traslados/creartraslado',$datos);
@@ -72,7 +72,7 @@ class Traslados extends Controller{
 
         $datos['traslado'] = $traslado -> where('idtra',$id)->first();
 
-        $datos['cabecera'] = view('template/cabecera');
+        $datos['cabecera2'] = view('template/cabecera2');
         $datos['pie'] = view('template/piepagina');
 
         return view('traslados/editartraslado',$datos);

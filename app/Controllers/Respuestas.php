@@ -11,7 +11,7 @@ class Respuestas extends Controller{
         $respuesta = new Respuesta();
         $datos['respuestas'] = $respuesta->orderBy('idres','ASC')->findAll();
 
-        $datos['cabecera'] = view('template/cabecera');
+        $datos['cabecera2'] = view('template/cabecera2');
         $datos['pie'] = view('template/piepagina');
 
         return view('respuestas/listarrespuesta',$datos);
@@ -21,7 +21,7 @@ class Respuestas extends Controller{
     
     public function crearrespuesta(){
 
-        $datos['cabecera'] = view('template/cabecera');
+        $datos['cabecera2'] = view('template/cabecera2');
         $datos['pie'] = view('template/piepagina');
 
         return view('respuestas/crearrespuesta',$datos);
@@ -73,7 +73,7 @@ class Respuestas extends Controller{
 
         $datos['respuesta'] = $respuesta -> where('idres',$id)->first();
 
-        $datos['cabecera'] = view('template/cabecera');
+        $datos['cabecera2'] = view('template/cabecera2');
         $datos['pie'] = view('template/piepagina');
 
         return view('respuestas/editarrespuesta',$datos);

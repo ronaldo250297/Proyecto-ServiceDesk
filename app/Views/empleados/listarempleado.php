@@ -1,4 +1,4 @@
-<?=$cabecera;?>
+<?=$cabecera2;?>
     
 <a  class="btn btn-success"  href="<?=base_url('crearempleado')?>">Crear Empleado</a>
 <br/>

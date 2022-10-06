@@ -1,4 +1,4 @@
-<?=$cabecera;?>
+<?=$cabecera2;?>
 
     Formulario Nuevo Area
 

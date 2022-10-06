@@ -10,7 +10,7 @@ class Empleados extends Controller{
         $empleado = new Empleado();
         $datos['empleados'] = $empleado->orderBy('idemp','ASC')->findAll();
 
-        $datos['cabecera'] = view('template/cabecera');
+        $datos['cabecera2'] = view('template/cabecera2');
         $datos['pie'] = view('template/piepagina');
 
         return view('empleados/listarempleado',$datos);
@@ -18,7 +18,7 @@ class Empleados extends Controller{
 
     public function crearempleado(){
 
-        $datos['cabecera'] = view('template/cabecera');
+        $datos['cabecera2'] = view('template/cabecera2');
         $datos['pie'] = view('template/piepagina');
 
         return view('empleados/crearempleado',$datos);
@@ -79,7 +79,7 @@ class Empleados extends Controller{
 
         $datos['empleado'] = $empleado -> where('idemp',$id)->first();
 
-        $datos['cabecera'] = view('template/cabecera');
+        $datos['cabecera2'] = view('template/cabecera2');
         $datos['pie'] = view('template/piepagina');
 
         return view('empleados/editarempleado',$datos);
