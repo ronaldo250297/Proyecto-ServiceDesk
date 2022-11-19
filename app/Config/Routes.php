@@ -100,3 +100,19 @@ $routes->post('guardartraslado', 'Traslados::guardartraslado');
 $routes->get('borrartraslado/(:num)', 'Traslados::borrartraslado/$1');
 $routes->get('editartraslado/(:num)', 'Traslados::editartraslado/$1');
 $routes->post('actualizartraslado', 'Traslados::actualizartraslado');
+
+//Pregunta
+$routes->get('listarpregunta', 'Preguntas::index');
+$routes->get('crearpregunta', 'Preguntas::crearpregunta');
+$routes->post('guardarpregunta', 'Preguntas::guardarpregunta');
+$routes->get('borrarpregunta/(:num)', 'Preguntas::borrarpregunta/$1');
+$routes->get('editarpregunta/(:num)', 'Preguntas::editarpregunta/$1');
+$routes->post('actualizarpregunta', 'Preguntas::actualizarpregunta');
+
+//Peticion
+$routes->get('listarpeticion', 'Peticiones::index');
+$routes->get('crearpeticion', 'Peticiones::crearpeticion');
+$routes->post('guardarpeticion', 'Peticiones::guardarpeticion');
+$routes->get('borrarpeticion/(:num)', 'Peticiones::borrarpeticion/$1');
+$routes->get('editarpeticion/(:num)', 'Peticiones::editarpeticion/$1');
+$routes->post('actualizarpeticion', 'Peticiones::actualizarpeticion');

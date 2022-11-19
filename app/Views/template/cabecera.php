@@ -30,7 +30,10 @@
                     <a class="nav-link" href="<?=base_url('listarincidencia');?>">REG. INCIDENCIA<span></span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">REG. PETICION<span></span></a>
+                    <a class="nav-link" href="<?=base_url('listarpeticion');?>">REG. PETICION<span></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="<?=base_url('listarpregunta');?>">PREG. FRECUENTES<span></span></a>
                 </li>
                 <!--
                 <li class="nav-item active">

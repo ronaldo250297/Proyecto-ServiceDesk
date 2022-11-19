@@ -2,9 +2,6 @@
 
     Formulario Nuevo Usuarios
 
-
-
-
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">Ingresar datos del usuario</h5>
