@@ -3,6 +3,15 @@
 <a  class="btn btn-success"  href="<?=base_url('crearincidencia')?>">Crear Incidencia</a>
 <br/>
 <br/>
+<div class="container-fluid">
+            <form class="d-flex">
+                <form action="" method="GET">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" name="busqueda"> <br>
+                    <button class="btn btn-outline-info" type="submit" name="enviar"><b>BUSCAR</b></button>
+                </form>
+            </form>
+        </div>
+        <br/>
         <table class="table table-light">
             <thead class="thead-light">
                 <tr>

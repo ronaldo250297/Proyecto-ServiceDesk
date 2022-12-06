@@ -33,7 +33,7 @@
                     <a class="nav-link" href="<?=base_url('listarpeticion');?>">REG. PETICION<span></span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="<?=base_url('listarpregunta');?>">PREG. FRECUENTES<span></span></a>
+                    <a class="nav-link" href="<?=base_url('listarpregunta');?>">REG. ESCALABILIDAD<span></span></a>
                 </li>
                 <!--
                 <li class="nav-item active">

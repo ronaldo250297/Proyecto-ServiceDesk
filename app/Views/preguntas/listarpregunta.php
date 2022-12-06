@@ -1,19 +1,45 @@
 <?=$cabecera;?>
 
-<a  class="btn btn-success"  href="<?=base_url('crearpregunta')?>">Crear Pregunta</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="../template/js/buscador.js"></script>
+
+<a  class="btn btn-success"  href="<?=base_url('crearpregunta')?>">Crear Escalabilidad</a>
 <br/>
 <br/>
-        <table class="table table-light">
+
+        <div class="container-fluid">
+            <form class="d-flex">
+                <form action="" method="GET">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" name="busqueda"> <br>
+                    <button class="btn btn-outline-info" type="submit" name="enviar"><b>BUSCAR</b></button>
+                </form>
+            </form>
+        </div>
+
+        <?php
+        $conexion = mysqli_connect("localhost","root","","servicedesk");
+        $where = "";
+        if(isset($_GET['enviar'])){
+            $busqueda = $_GET['busqueda'];
+            if(isset($_GET['busqueda'])){
+                $where = "WHERE preguntas.pregun LIKE'%".$busqueda."%'";
+            }
+        }
+        ?>
+
+
+<br/>
+        <table class="table table-striped table-dark table_id">
             <thead class="thead-light">
                 <tr>
                     <th>ID</th>
-                    <th>PREGUNTA FRECUENTE</th>
-                    <th>RESPUESTA</th>
+                    <th>INCIDENCIA</th>
+                    <th>ESCALABILIDAD</th>
                     <th>ACCIONES</th>
                 </tr>
             </thead>
             <tbody>
-
+            
             <?php
                 foreach($preguntas as $pregunta):
             ?>
@@ -29,6 +55,6 @@
             <?php endforeach; ?>
             </tbody>
         </table>
-
+        
 <?=$pie;?>
 
